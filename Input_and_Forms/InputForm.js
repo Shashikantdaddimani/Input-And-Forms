@@ -47,7 +47,7 @@ function mobileNumber() {
     return input;
 }
 function passWord() {
-    let pattern = new RegExp('^[A-Za-z0-9]{8,}$');
+    let pattern = new RegExp('((?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$-%^&*]).{8,})');
     let input;
     
         input = document.getElementById("passWord").value;
@@ -61,6 +61,7 @@ function passWord() {
     
     return input;
 }
+
 function validationRules() {
     firstName();
     emailId();
