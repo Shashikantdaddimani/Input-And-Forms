@@ -1,0 +1,11 @@
+html,input{
+    font-family:'Times New Roman', Times, serif;
+}
+body {
+    background-color: rgb(234, 233, 157);
+    text-align: center;
+  }
+  button{
+    width: 10%;
+    margin: 0 auto;
+  }
