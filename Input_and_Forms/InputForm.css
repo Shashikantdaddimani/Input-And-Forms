@@ -9,3 +9,12 @@ body {
     width: 10%;
     margin: 0 auto;
   }
+  label {
+    text-align: inherit;
+    width: 30%;
+    margin-right: 0%;
+    color: rgb(228, 71, 71);
+}
+input {
+  display: inline-block;
+}

@@ -31,7 +31,23 @@ function emailId() {
     
     return input;
 }
+function mobileNumber() {
+    let pattern = new RegExp('^[6-9]{1}[0-9]{9}$');
+    let input;
+    
+        input = document.getElementById("mobileNumber").value;
+        let status = pattern.test(input);
+        if (status) {
+            alert("Valid mobileNumber");
+        }
+        else{
+            alert("Invalid mobileNumber (Enter like Example:- 91 9611035548)"); 
+        }
+    
+    return input;
+}
 function validationRules() {
     firstName();
     emailId();
+    mobileNumber();
 }
