@@ -16,6 +16,22 @@ function firstName() {
     
     return input;
 }
+function emailId() {
+    let pattern = new RegExp('^[a-z]+[.][a-zA-Z]+[@][a-zA-Z]+[.][a-z]{2,3}([.][a-zA-Z]{2,3})*$');
+    let input;
+    
+        input = document.getElementById("emailId").value;
+        let status = pattern.test(input);
+        if (status) {
+            alert("Valid emailId");
+        }
+        else{
+            alert("Invalid emailId (Example:- abc.xyz@bl.co.in)"); 
+        }
+    
+    return input;
+}
 function validationRules() {
     firstName();
+    emailId();
 }
